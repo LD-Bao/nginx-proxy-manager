@@ -1,4 +1,4 @@
-# 搭建 Nginx Proxy Manager
+# 搭建 Nginx Proxy Manager （申请证书反向代理）
 
 本教程将指导你在 VPS 上搭建 Nginx Proxy Manager。
 
