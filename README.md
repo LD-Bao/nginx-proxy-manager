@@ -71,4 +71,11 @@ services:
 
 1. 访问 Nginx Proxy Manager 管理页面：在浏览器中输入 `http://<VPS_IP>:81`。
 
+默认管理员信息:
+
+Email:    admin@example.com
+Password: changeme
+使用这个默认用户登录后，系统会立即要求您修改详细信息和密码。
+详情请查考GitHub官方 [中文版](https://github.com/xiaoxinpro/nginx-proxy-manager-zh)。
+
 至此，你已经成功在 VPS 上搭建了 Nginx Proxy Manager。
