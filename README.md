@@ -79,3 +79,26 @@ Password: changeme
 详情请查考GitHub官方 [中文版](https://github.com/xiaoxinpro/nginx-proxy-manager-zh)。
 
 至此，你已经成功在 VPS 上搭建了 Nginx Proxy Manager。
+
+## 第五步：申请SSL证书
+
+1. 登入WEB界面后，找到SSL进入，点击添加SSL证书按钮，选择添加Let's Encrypt证书
+
+2. 域名 如：*.lsdong.com lsdong.com 两个都填上（填入实际的域名），概括所有后缀为lsdong.com的二级域名
+  当然在这一步之前需要在自己申请的服务商里设置域名解析，IP指向此安装了NPM服务器的主机IP。
+
+3. 选择 使用DNS认证 
+   如：aliyun ,选择后填写秘钥
+   dns_aliyun_access_key = （这里填写ID）
+   dns_aliyun_access_key_secret = （这里填写Secret）
+   保存等待，SSL证书申请完成！
+
+## 第六步：添加代理服务
+1.  仪表盘里点击代理服务按钮，进入找到添加代理服务，点击
+2.  域名填写自己解析了的域名，二级部分根据自己需求填写
+    如：nihao.lsdong.com
+        haode.lsdong.com  (nihao和haode这些可以随意更改，记得住就行)
+3.  转发主机填写要去往的域名或者ip，端口要正确，勾选阻止常见漏洞
+4.  点击SSL页面，选择刚刚申请了的SSL证书，下面4个选项全勾上
+   点击保存，代理设置完成
+
